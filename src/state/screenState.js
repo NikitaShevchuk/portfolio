@@ -1,5 +1,6 @@
-import secondScreenImage from "../common/assets/img/secondScreen.jfif";
+import firstScreenImage from "../common//assets/img/firstScreen.png"
 import thirdScreenImage from "../common/assets/img/thirdScreen.svg";
+import fourthScreenImage from "../common/assets/img/fourthScreen.svg";
 import {makeAutoObservable} from "mobx";
 
 class screenState {
@@ -12,7 +13,7 @@ class screenState {
             link: '/about',
             title: 'Nikita Shevchuk',
             subtitle: 'front-end developer',
-            image: secondScreenImage,
+            image: firstScreenImage,
             order: '01',
             showButton: false
         },
@@ -29,8 +30,9 @@ class screenState {
             className: 'fourth-screen screen',
             link: '',
             title: 'Contacts',
-            subtitle: 'list of contacts',
-            image: thirdScreenImage,
+            subtitle: `shevchuk.nikita.gh@gmail.com`,
+            phone: `+380931471176`,
+            image: fourthScreenImage,
             order: '03',
             showButton: false
         }

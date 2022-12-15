@@ -32,7 +32,7 @@ const Works = ({content}) => {
                     <div className="single-project">
                         <a href="https://nikitashevchuk.github.io/e-commerce" className="projects__item-img" target="_blank">
                             <img src={ecommerce} alt="" className="luxy-el svg" data-speed-y="4"
-                                 data-offset="-115" />
+                                 data-offset={`-${100 / 963 * window.innerHeight}`} />
                         </a>
                         <div className="projects__item-title">
                             <div className="page-content__title">
@@ -57,7 +57,7 @@ const Works = ({content}) => {
                     <div className="single-project">
                         <a href="https://nikitashevchuk.github.io/my-app" className="projects__item-img" target="_blank">
                             <img src={social} alt="" className="luxy-el" data-speed-y="-5"
-                                 data-offset="250" />
+                                 data-offset={`${260 / 963 * window.innerHeight}`} />
                         </a>
                         <div className="projects__item-title">
                             <div className="page-content__title">
@@ -78,7 +78,7 @@ const Works = ({content}) => {
                         <a href="https://peekaboovillage.ru/" className="projects__item-img" target="_blank">
                             <img src={peekaboovillage} alt="" className="luxy-el"
                                  data-speed-y="-4"
-                                 data-offset="250" />
+                                 data-offset={`${260 / 963 * window.innerHeight}`} />
                         </a>
                         <div className="projects__item-title">
                             <div className="page-content__title">
@@ -95,7 +95,7 @@ const Works = ({content}) => {
                     <div className="single-project">
                         <a href="https://kudyr.ru/" className="projects__item-img" target="_blank">
                             <img src={kudyr} alt="" className="luxy-el" data-speed-y="2"
-                                 data-offset="-120" />
+                                 data-offset={`-${130 / 963 * window.innerHeight}`} />
                         </a>
                         <div className="projects__item-title">
                             <div className="page-content__title">

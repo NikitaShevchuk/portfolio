@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
-const Screen = ({className, link, title, subtitle, image, order, showButton}) => {
+const Screen = ({className, link, title, subtitle, image, order, showButton, phone}) => {
     return (
         <div className={className}>
             <div className="screen-content">
@@ -18,6 +18,9 @@ const Screen = ({className, link, title, subtitle, image, order, showButton}) =>
                     </div>
                     <div className="screen__title-subtitle __title-subtitle">
                         {subtitle}
+                        {phone &&
+                            <div style={{marginTop: '.5vw'}}>{phone}</div>
+                        }
                     </div>
                     {showButton &&
                         <NavLink

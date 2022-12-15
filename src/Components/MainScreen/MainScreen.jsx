@@ -5,11 +5,9 @@ const MainScreen = () => {
     const changeScreen = () => screenState.changeCurrentScreen(2)
     return <div className="main-screen">
             <div className="main-screen__text">
-                <span>Hello</span><span>, i'm </span><span>Nikita</span><span>. I </span>
-                <span>develop </span> <span className="filled">custom web applications</span><span>
-                .</span><br/><span>Glad </span> <span>to </span><span>help </span>
-                    <span>you 🤝</span>
-                    <br/>
+                <span>Hi</span><span>! I'm </span><span>Nikita </span><span>and </span>
+                <span>I'm </span> <span>a <span>Software</span> Engineer</span><span>
+                .</span><br/><span>I will </span> <span>be glad </span> <span>to cooperate 🤝</span>
             </div>
             <div className="scroll-to-icon" onClick={changeScreen}></div>
         </div>
