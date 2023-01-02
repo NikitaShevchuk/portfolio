@@ -1,7 +1,18 @@
-import React from 'react';
-import {NavLink} from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-const Screen = ({className, link, title, subtitle, image, order, showButton, phone}) => {
+const Screen = ({
+    className,
+    link,
+    title,
+    textToCopy,
+    image,
+    order,
+    showButton,
+    Body,
+    subtitle,
+}) => {
+    const copyText = (text) => navigator.clipboard.writeText(text);
     return (
         <div className={className}>
             <div className="screen-content">
@@ -17,31 +28,33 @@ const Screen = ({className, link, title, subtitle, image, order, showButton, pho
                         <div className="title-lines__item"></div>
                     </div>
                     <div className="screen__title-subtitle __title-subtitle">
-                        {subtitle}
-                        {phone &&
-                            <div style={{marginTop: '.5vw'}}>{phone}</div>
-                        }
+                        {subtitle && subtitle}
+                        {Body && <Body />}
+                        {textToCopy &&
+                            textToCopy.map((textItem) => (
+                                <div
+                                    key={textItem}
+                                    onClick={() => copyText(textItem)}
+                                    className="mt hover-underline"
+                                >
+                                    {textItem}
+                                </div>
+                            ))}
                     </div>
-                    {showButton &&
+                    {showButton && (
                         <NavLink
                             to={link}
                             className="third-screen__button hide-circle"
                         >
                             See more
                         </NavLink>
-                    }
+                    )}
                 </div>
-                <NavLink
-                    to={link}
-                    className="screen-image hide-circle"
-                >
-                    <img src={image} alt=''/>
+                <NavLink to={link} className="screen-image hide-circle">
+                    <img src={image} alt="" />
                     <span className="blur"></span>
                 </NavLink>
-                <NavLink
-                    to={link}
-                    className="screen-order"
-                >
+                <NavLink to={link} className="screen-order">
                     {order}
                 </NavLink>
             </div>
