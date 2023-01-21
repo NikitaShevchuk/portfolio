@@ -28,11 +28,10 @@ const About = ({ content }) => {
                         <div className="page-content__title-line"></div>
                     </div>
                     <div className="page-content__main-text">
-                        Freelance software engineer with experience working with
-                        clients. Can easily communicate in English during
-                        workflow. Have got a hands-on experience with React.
-                        Ready to develop software engineering skills with React
-                        and Angular to bring the best solution.
+                        Software engineer with experience in building web apps with React, Redux,
+                        and Typescript. Can easily communicate in English during a workflow. My
+                        passion is building dynamic, content-aware client-facing systems for online
+                        retail, business services, and other areas with a modern tech stack.
                     </div>
                 </div>
 
@@ -46,9 +45,7 @@ const About = ({ content }) => {
                         <div className="page-content__title-line"></div>
                     </div>
 
-                    <div className="page-content__main-text">
-                        Technologies I have worked with
-                    </div>
+                    <div className="page-content__main-text">Technologies I have worked with</div>
                 </div>
                 <div className="stack">
                     {techStack.map((stackItem) => (

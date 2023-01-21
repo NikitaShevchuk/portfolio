@@ -23,11 +23,7 @@ const Works = ({ content }) => {
         <>
             <div className="page-content__main page-content__projects">
                 <Tip tipIsShown={tipIsShown} />
-                <div
-                    className="projects-title luxy-el"
-                    data-horizontal="1"
-                    data-speed-x="30"
-                >
+                <div className="projects-title luxy-el" data-horizontal="1" data-speed-x="30">
                     <div className="projects-title__item">WORKS</div>
                     <div className="projects-title__item filled">WORKS</div>
                     <div className="projects-title__item">WORKS</div>
@@ -49,9 +45,7 @@ const Works = ({ content }) => {
                                     alt=""
                                     className="luxy-el svg"
                                     data-speed-y="4"
-                                    data-offset={`-${
-                                        (100 / 963) * window.innerHeight
-                                    }`}
+                                    data-offset={`-${(100 / 963) * window.innerHeight}`}
                                 />
                             </a>
                             <div className="projects__item-title">
@@ -60,9 +54,7 @@ const Works = ({ content }) => {
                                         <span className="text">/</span>
                                         <span className="text-red">01</span>
                                     </div>
-                                    <div className="page-content__title-main">
-                                        E-commerce
-                                    </div>
+                                    <div className="page-content__title-main">E-commerce</div>
                                     <div className="page-content__title-line"></div>
                                 </div>
                             </div>
@@ -71,7 +63,7 @@ const Works = ({ content }) => {
 
                     <div className="projects__item __item-right second">
                         <a
-                            href="https://www.upwork.com/"
+                            href="https://github.com/NikitaShevchuk"
                             target="_blank"
                             className="third-screen__button hide-circle project__botton"
                         >
@@ -92,9 +84,7 @@ const Works = ({ content }) => {
                                     alt=""
                                     className="luxy-el"
                                     data-speed-y="-5"
-                                    data-offset={`${
-                                        (260 / 963) * window.innerHeight
-                                    }`}
+                                    data-offset={`${(260 / 963) * window.innerHeight}`}
                                 />
                             </a>
                             <div className="projects__item-title">
@@ -103,9 +93,7 @@ const Works = ({ content }) => {
                                         <span className="text">/</span>
                                         <span className="text-red">02</span>
                                     </div>
-                                    <div className="page-content__title-main">
-                                        Social network
-                                    </div>
+                                    <div className="page-content__title-main">Social network</div>
                                     <div className="page-content__title-line"></div>
                                 </div>
                             </div>
@@ -115,7 +103,7 @@ const Works = ({ content }) => {
                     <div className="projects__item __item-left last">
                         <div className="single-project">
                             <a
-                                href="https://peekaboovillage.ru/"
+                                href="https://nikitashevchuk.github.io/freelance-projects/"
                                 className="projects__item-img"
                                 target="_blank"
                             >
@@ -124,9 +112,7 @@ const Works = ({ content }) => {
                                     alt=""
                                     className="luxy-el"
                                     data-speed-y="-4"
-                                    data-offset={`${
-                                        (260 / 963) * window.innerHeight
-                                    }`}
+                                    data-offset={`${(260 / 963) * window.innerHeight}`}
                                 />
                             </a>
                             <div className="projects__item-title">
@@ -135,9 +121,7 @@ const Works = ({ content }) => {
                                         <span className="text">/</span>
                                         <span className="text-red">03</span>
                                     </div>
-                                    <div className="page-content__title-main">
-                                        peekaboovillage
-                                    </div>
+                                    <div className="page-content__title-main">peekaboovillage</div>
                                     <div className="page-content__title-line"></div>
                                 </div>
                             </div>
@@ -145,7 +129,7 @@ const Works = ({ content }) => {
 
                         <div className="single-project">
                             <a
-                                href="https://kudyr.ru/"
+                                href="https://github.com/NikitaShevchuk"
                                 className="projects__item-img"
                                 target="_blank"
                             >
@@ -154,9 +138,7 @@ const Works = ({ content }) => {
                                     alt=""
                                     className="luxy-el"
                                     data-speed-y="2"
-                                    data-offset={`-${
-                                        (130 / 963) * window.innerHeight
-                                    }`}
+                                    data-offset={`-${(130 / 963) * window.innerHeight}`}
                                 />
                             </a>
                             <div className="projects__item-title">
@@ -165,9 +147,7 @@ const Works = ({ content }) => {
                                         <span className="text">/</span>
                                         <span className="text-red">04</span>
                                     </div>
-                                    <div className="page-content__title-main">
-                                        kudyr
-                                    </div>
+                                    <div className="page-content__title-main">accounting</div>
                                     <div className="page-content__title-line"></div>
                                 </div>
                             </div>

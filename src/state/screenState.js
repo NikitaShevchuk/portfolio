@@ -31,7 +31,7 @@ class screenState {
             className: "fourth-screen screen",
             link: "",
             title: "Contacts",
-            textToCopy: [`shevchuk.nikita.gh@gmail.com`, `+380931471176`],
+            textToCopy: [`shevchuk.nikita.gh@gmail.com`, `+380674460780`],
             Body: Contacts,
             image: fourthScreenImage,
             order: "03",
@@ -48,9 +48,10 @@ class screenState {
     };
     exitScreen = (screenNumber) => {
         const screenIndex = screenNumber - 2;
-        this.screens[screenIndex].className = this.screens[
-            screenIndex
-        ].className.replace(" animate", "");
+        this.screens[screenIndex].className = this.screens[screenIndex].className.replace(
+            " animate",
+            ""
+        );
     };
     changeCurrentScreen = (screenNumber) => {
         this.currentScreen = screenNumber;
