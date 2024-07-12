@@ -14,7 +14,7 @@ const initialScreens = [
     subtitle: "front-end developer",
     image: firstScreenImage,
     order: "01",
-    showButton: false,
+    showButton: true,
   },
   {
     className: "third-screen screen" as string,
@@ -45,8 +45,9 @@ export type AllowedScreenNumber = IntRange<
 >;
 
 const initialState = {
-  currentScreen: (localStorage.getItem("currentScreen") ??
-    1) as AllowedScreenNumber,
+  currentScreen: (localStorage.getItem("currentScreen")
+    ? Number(localStorage.getItem("currentScreen"))
+    : 1) as AllowedScreenNumber,
   isScreenOpen: false,
   screens: initialScreens,
 };
@@ -105,7 +106,7 @@ function reducer(state: ScreenState, action: ScreenActions): ScreenState {
     const updatedScreens = [...state.screens];
     updatedScreens[screenIndex] = {
       ...state.screens[screenIndex],
-      className: state.screens[screenIndex] + " animate",
+      className: state.screens[screenIndex].className + " animate",
     };
     return {
       ...state,
@@ -120,12 +121,14 @@ function reducer(state: ScreenState, action: ScreenActions): ScreenState {
       ...state.screens[screenIndex],
       className: prevClassName.replace(" animate", ""),
     };
+
     return {
       ...state,
       screens: updatedScreens as unknown as Screens,
     };
   }
   if (action.type === ScreenActionTypes.CHANGE_CURRENT_SCREEN) {
+    localStorage.setItem("currentScreen", String(action.payload));
     return { ...state, currentScreen: action.payload as AllowedScreenNumber };
   }
   if (action.type === ScreenActionTypes.NEXT_SCREEN) {
@@ -134,6 +137,7 @@ function reducer(state: ScreenState, action: ScreenActions): ScreenState {
     if (!nextScreenIndexIsValid) {
       return state;
     }
+    localStorage.setItem("currentScreen", String(nextScreen));
     return { ...state, currentScreen: nextScreen };
   }
   if (action.type === ScreenActionTypes.PREV_SCREEN) {
@@ -142,6 +146,7 @@ function reducer(state: ScreenState, action: ScreenActions): ScreenState {
     if (!prevScreenIndexIsValid) {
       return state;
     }
+    localStorage.setItem("currentScreen", String(prevScreen));
     return { ...state, currentScreen: prevScreen };
   }
   if (action.type === ScreenActionTypes.SET_IS_SCREEN_OPEN) {

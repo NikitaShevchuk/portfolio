@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import luxy from "luxy.js";
 import ecommerce from "../../assets/img/projects/e-commerce.svg";
 import arrow from "../../assets/img/icons/arrow2.svg";
 import kudyr from "../../assets/img/projects/kudyr.svg";
@@ -6,9 +9,15 @@ import peekaboovillage from "../../assets/img/projects/peekaboovillage.svg";
 import Footer from "../footer/footer";
 import { useOnPageOpened } from "../../utils";
 import Tip from "../../utils/Tip";
+import { usePageTransition } from "../../hooks/use-page-transition";
+import React from "react";
 
 const Works = () => {
   const tipIsShown = useOnPageOpened();
+  usePageTransition(2);
+  React.useEffect(() => {
+    luxy.init();
+  }, []);
   return (
     <>
       <div className="page-content__main page-content__projects">

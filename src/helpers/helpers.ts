@@ -9,12 +9,24 @@ export const changeNameByOrder = (
   isScreenOpened: boolean,
 ) => {
   const changeClassName = (className: string) => {
-    if (isScreenOpened) return `${className} page-content`;
-    else return className.replace(" page-content", "");
+    if (isScreenOpened) {
+      return `${className} page-content`;
+    } else {
+      return className.replace(" page-content", "");
+    }
   };
-  if (screenNumber === 1) return changeClassName(FIRST_SCREEN);
-  if (screenNumber === 2) return changeClassName(SECOND_SCREEN);
-  if (screenNumber === 3) return changeClassName(THIRD_SCREEN);
-  if (screenNumber === 4) return changeClassName(FOURTH_SCREEN);
-  else return changeClassName(FIRST_SCREEN);
+  if (screenNumber === 1) {
+    return changeClassName(FIRST_SCREEN);
+  }
+  if (screenNumber === 2) {
+    return changeClassName(SECOND_SCREEN);
+  }
+  if (screenNumber === 3) {
+    return changeClassName(THIRD_SCREEN);
+  }
+  if (screenNumber === 4) {
+    return changeClassName(FOURTH_SCREEN);
+  } else {
+    return changeClassName(FIRST_SCREEN);
+  }
 };

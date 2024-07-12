@@ -67,7 +67,9 @@ const App = () => {
   };
 
   React.useEffect(() => {
-    if (window.innerWidth > 1920) setBgImage(mainBg);
+    if (window.innerWidth > 1920) {
+      setBgImage(mainBg);
+    }
     luxy.init();
   }, []);
 

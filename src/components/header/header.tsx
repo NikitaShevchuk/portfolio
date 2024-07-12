@@ -18,9 +18,13 @@ const Header = () => {
         onClick={() => changeScreen(1)}
         to="/"
       >
-        <div className="logo-circle"></div>
-        <div className="block">portfolio</div>
-        <div className="visible">portfolio</div>
+        {/* <div className="logo-circle"></div> */}
+        <div className="block">
+          <span className="red">p</span>ortfolio
+        </div>
+        <div className="visible">
+          <span className="red">p</span>ortfolio
+        </div>
       </NavLink>
       <div className="menu">
         <NavLink

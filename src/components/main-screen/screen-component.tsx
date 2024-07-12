@@ -50,8 +50,8 @@ const Screen = ({
               ))}
           </div>
           {showButton && (
-            <NavLink to={link} className="third-screen__button hide-circle">
-              See more
+            <NavLink to={link} className="screen__button hide-circle">
+              Details
             </NavLink>
           )}
         </div>

@@ -1,7 +1,8 @@
 @font-face {
     font-family: "Visuelt Pro";
     src: url("fonts/VisueltPro-Regular.eot");
-    src: local("VisueltPro-Regular"),
+    src:
+        local("VisueltPro-Regular"),
         url("fonts/VisueltPro-Regular.eot?#iefix") format("embedded-opentype"),
         url("fonts/VisueltPro-Regular.woff2") format("woff2"),
         url("fonts/VisueltPro-Regular.woff") format("woff"),
@@ -13,7 +14,8 @@
 @font-face {
     font-family: "VisueltPro-Black";
     src: url("fonts/VisueltPro-Black.eot");
-    src: local("VisueltPro-Black"),
+    src:
+        local("VisueltPro-Black"),
         url("fonts/VisueltPro-Black.eot?#iefix") format("embedded-opentype"),
         url("fonts/VisueltPro-Black.woff2") format("woff2"),
         url("fonts/VisueltPro-Black.woff") format("woff"),
@@ -25,7 +27,8 @@
 @font-face {
     font-family: "Abril";
     font-display: swap;
-    src: local("Abril Regular"),
+    src:
+        local("Abril Regular"),
         url("fonts/AbrilFatface-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
@@ -33,7 +36,8 @@
 @font-face {
     font-family: "Visuelt Pro";
     src: url("fonts/VisueltPro-LightItalic.eot");
-    src: local("VisueltPro-LightItalic"),
+    src:
+        local("VisueltPro-LightItalic"),
         url("fonts/VisueltPro-LightItalic.eot?#iefix")
             format("embedded-opentype"),
         url("fonts/VisueltPro-LightItalic.woff2") format("woff2"),
@@ -45,7 +49,8 @@
 @font-face {
     font-family: "Visuelt Pro";
     src: url("fonts/VisueltPro-Italic.eot");
-    src: local("VisueltPro-Italic"),
+    src:
+        local("VisueltPro-Italic"),
         url("fonts/VisueltPro-Italic.eot?#iefix") format("embedded-opentype"),
         url("fonts/VisueltPro-Italic.woff2") format("woff2"),
         url("fonts/VisueltPro-Italic.woff") format("woff"),
@@ -57,7 +62,8 @@
     font-family: "Visuelt Pro";
     font-display: swap;
     src: url("fonts/VisueltPro-Medium.eot");
-    src: local("VisueltPro-Medium"),
+    src:
+        local("VisueltPro-Medium"),
         url("fonts/VisueltPro-Medium.eot?#iefix") format("embedded-opentype"),
         url("fonts/VisueltPro-Medium.woff2") format("woff2"),
         url("fonts/VisueltPro-Medium.woff") format("woff"),
@@ -69,7 +75,8 @@
     font-family: "Visuelt Pro";
     font-display: swap;
     src: url("fonts/VisueltPro-Black.eot");
-    src: local("VisueltPro-Black"),
+    src:
+        local("VisueltPro-Black"),
         url("fonts/VisueltPro-Black.eot?#iefix") format("embedded-opentype"),
         url("fonts/VisueltPro-Black.woff2") format("woff2"),
         url("fonts/VisueltPro-Black.woff") format("woff"),
@@ -82,7 +89,8 @@
     font-family: "Visuelt Pro";
     font-display: swap;
     src: url("fonts/VisueltPro-Bold.eot");
-    src: local("VisueltPro-Bold"),
+    src:
+        local("VisueltPro-Bold"),
         url("fonts/VisueltPro-Bold.eot?#iefix") format("embedded-opentype"),
         url("fonts/VisueltPro-Bold.woff2") format("woff2"),
         url("fonts/VisueltPro-Bold.woff") format("woff"),
@@ -94,7 +102,8 @@
     font-family: "Visuelt Pro";
     font-display: swap;
     src: url("fonts/VisueltPro-Light.eot");
-    src: local("VisueltPro-Light"),
+    src:
+        local("VisueltPro-Light"),
         url("fonts/VisueltPro-Light.eot?#iefix") format("embedded-opentype"),
         url("fonts/VisueltPro-Light.woff2") format("woff2"),
         url("fonts/VisueltPro-Light.woff") format("woff"),
@@ -107,7 +116,8 @@
     font-family: "Visuelt Pro";
     font-display: swap;
     src: url("fonts/VisueltPro-BlackItalic.eot");
-    src: local("VisueltPro-BlackItalic"),
+    src:
+        local("VisueltPro-BlackItalic"),
         url("fonts/VisueltPro-BlackItalic.eot?#iefix")
             format("embedded-opentype"),
         url("fonts/VisueltPro-BlackItalic.woff2") format("woff2"),
@@ -119,7 +129,8 @@
 @font-face {
     font-family: "GT Cinetype Regular";
     src: url("fonts/110de0bbe7344f96136d5cedd6608f9d.eot");
-    src: local("110de0bbe7344f96136d5cedd6608f9d"),
+    src:
+        local("110de0bbe7344f96136d5cedd6608f9d"),
         url("fonts/110de0bbe7344f96136d5cedd6608f9d.woff2") format("woff2"),
         url("fonts/110de0bbe7344f96136d5cedd6608f9d.woff") format("woff"),
         url("fonts/110de0bbe7344f96136d5cedd6608f9d.ttf") format("truetype"),
@@ -147,10 +158,13 @@ body {
     background-color: #363636;
 }
 .black {
-    color: #ffffff;
+    color: #e0e1e4;
 }
 .black a {
-    color: #ffffff;
+    color: #e0e1e4;
+}
+.red {
+    color: #f94444;
 }
 #luxy {
     max-height: 100vh !important;
@@ -159,10 +173,10 @@ body {
     max-height: none !important;
 }
 .page-content {
-    color: #ffffff;
+    color: #e0e1e4;
 }
 .page-content a {
-    color: #ffffff;
+    color: #e0e1e4;
 }
 .page-content.white-bg a.logo {
     color: #363636;
@@ -217,7 +231,7 @@ body {
     transition: bottom 0.8s ease-in-out 0.3s;
 }
 .percent {
-    color: #ffffff;
+    color: #e0e1e4;
     font-size: 3.2rem;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
@@ -226,7 +240,9 @@ body {
     width: 30vw;
     margin-top: 30px;
     opacity: 1;
-    transition: width 0.3s ease-in-out, opacity 0.1s 0.3s;
+    transition:
+        width 0.3s ease-in-out,
+        opacity 0.1s 0.3s;
 }
 .preloader.hide .percent {
     opacity: 0;
@@ -235,7 +251,9 @@ body {
 .preloader.hide .bar {
     width: 100vw;
     opacity: 0;
-    transition: width 0.3s ease-in-out, opacity 0.1s ease-in-out 0.3s;
+    transition:
+        width 0.3s ease-in-out,
+        opacity 0.1s ease-in-out 0.3s;
 }
 .barconfrm {
     width: 1%;
@@ -247,7 +265,7 @@ body {
     display: inline-block;
     opacity: 0;
     transform: rotateX(-90deg);
-    color: #ffffff;
+    color: #e0e1e4;
     font-size: 1.8rem;
     font-weight: 500;
 }
@@ -475,7 +493,7 @@ body {
 .navigation__line {
     width: 0px;
     height: 3px;
-    background: #ffffff;
+    background: #e0e1e4;
     margin-bottom: 3.241vh;
     transition: width ease-in-out 0.5s 0.5s;
     z-index: 3;
@@ -551,12 +569,12 @@ body {
     font-size: 1.6rem;
     font-style: italic;
     font-weight: 500;
-    color: #ffffff;
+    color: #e0e1e4;
 }
 .navigation__scrolldown-line {
     height: 4.427vw;
     width: 1px;
-    background: #ffffff;
+    background: #e0e1e4;
     margin-left: 0.3vw;
     margin-top: 0.3vw;
 }
@@ -800,12 +818,16 @@ header.header.animate {
 }
 .logo:hover::after {
     width: 58%;
-    transition: width ease 0.3s, color ease 0.3s;
+    transition:
+        width ease 0.3s,
+        color ease 0.3s;
 }
 .logo::before {
     border-bottom: 2px solid #f94444;
     color: #363636a1;
-    transition: width ease 0.3s, color ease 0.3s;
+    transition:
+        width ease 0.3s,
+        color ease 0.3s;
     content: "";
     display: block;
     position: absolute;
@@ -815,20 +837,23 @@ header.header.animate {
 }
 .logo:hover::before {
     width: 58%;
-    transition: width ease 0.3s, color ease 0.3s;
+    transition:
+        width ease 0.3s,
+        color ease 0.3s;
 }
 .logo-circle {
     position: absolute;
-    top: -34%;
+    top: -20%;
     left: -6%;
     background-color: #f94444;
     border-radius: 50%;
-    width: 3.7rem;
-    height: 3.7rem;
+    width: 3.5rem;
+    height: 3.5rem;
     z-index: -1;
     transform: scale(1);
     transition: all 0.5s ease;
 }
+
 .logo:hover .logo-circle {
     transform: scale(0);
     transition: all 0.5s ease;
@@ -906,7 +931,7 @@ div.white-bg a.menu__item {
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background: #ffffff;
+    background: #e0e1e4;
     position: absolute;
     bottom: -1px;
     left: 9.5%;
@@ -918,7 +943,7 @@ div.white-bg a.menu__item {
     background: #363636;
 }
 .black .menu::after {
-    background: #ffffff;
+    background: #e0e1e4;
     transition: all 0.5s ease;
 }
 .white-bg .menu::after {
@@ -938,6 +963,7 @@ div.white-bg a.menu__item {
 .menu__item:hover::before {
     left: 0px;
     transition: left ease-in-out 0.5s;
+    top: 50%;
 }
 
 .menu__item:first-child {
@@ -945,15 +971,15 @@ div.white-bg a.menu__item {
     transition: all 0.3s ease;
 }
 .second-screen .menu__item.about {
-    color: #fff;
+    color: #e0e1e4;
     transition: all 0.3s ease;
 }
 .third-screen .menu__item.works {
-    color: #fff;
+    color: #e0e1e4;
     transition: all 0.3s ease;
 }
 .fourth-screen .menu__item.contacts {
-    color: #fff;
+    color: #e0e1e4;
     transition: all 0.3s ease;
 }
 .first-screen .menu__item.contacts {
@@ -1064,7 +1090,7 @@ div.white-bg a.menu__item {
     left: 0px;
     right: 0px;
     margin: auto;
-    box-shadow: inset 0 0 0 2px #ffffff;
+    box-shadow: inset 0 0 0 2px #e0e1e4;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.25s;
@@ -1078,7 +1104,7 @@ div.white-bg a.menu__item {
     content: "";
     width: 4px;
     height: 6px;
-    background: #ffffff;
+    background: #e0e1e4;
     margin-left: 8px;
     top: 8px;
     border-radius: 2px;
@@ -1218,29 +1244,41 @@ div .main-wrapper .screen.animate .screen-image img {
     display: block;
     font-weight: 500;
     font-size: 7.5rem;
-    color: #ffffff;
+    color: #e0e1e4;
     transform: translateX(-100%);
-    transition: transform ease-in-out 0.5s, color 0.5s ease-in-out;
+    transition:
+        transform ease-in-out 0.5s,
+        color 0.5s ease-in-out;
     -webkit-text-stroke: 1px #ffff;
 }
 .screen__title-text:hover {
     color: transparent;
-    transition: transform ease-in-out 0.5s, color 0.5s ease-in-out;
+    transition:
+        transform ease-in-out 0.5s,
+        color 0.5s ease-in-out;
 }
 div.second-screen .second-screen .screen__title-text {
-    transition: transform 0.5s ease-in-out 0.5s, color 0.5s ease-in-out;
+    transition:
+        transform 0.5s ease-in-out 0.5s,
+        color 0.5s ease-in-out;
     transform: translateX(0px);
 }
 .page-content .page-content .screen__title-text {
-    transition: transform 0.5s ease-in-out 0.5s, color 0.5s ease-in-out;
+    transition:
+        transform 0.5s ease-in-out 0.5s,
+        color 0.5s ease-in-out;
     transform: translateX(0px);
 }
 div.third-screen .third-screen .screen__title-text {
-    transition: transform 0.5s ease-in-out 0.5s, color 0.5s ease-in-out;
+    transition:
+        transform 0.5s ease-in-out 0.5s,
+        color 0.5s ease-in-out;
     transform: translateX(0px);
 }
 div.fourth-screen .fourth-screen .screen__title-text {
-    transition: transform 0.5s ease-in-out 0.5s, color 0.5s ease-in-out;
+    transition:
+        transform 0.5s ease-in-out 0.5s,
+        color 0.5s ease-in-out;
     transform: translateX(0px);
 }
 .title-lines {
@@ -1379,7 +1417,7 @@ div.fourth-screen .fourth-screen .title-lines {
 }
 .screen__title-subtitle {
     font-size: 2rem;
-    color: #ffffff;
+    color: #e0e1e4;
     letter-spacing: 0.15em;
     font-weight: 300;
     transform: translateX(-100%);
@@ -1422,7 +1460,7 @@ div.fourth-screen .fourth-screen .screen__title-subtitle {
 }
 .screen-order {
     display: block;
-    color: #ffffff;
+    color: #e0e1e4;
     font-size: 13rem;
     font-family: "Abril";
     position: absolute;
@@ -1435,7 +1473,7 @@ div.fourth-screen .fourth-screen .screen__title-subtitle {
 }
 .screen-order:hover {
     color: transparent;
-    -webkit-text-stroke: 3px #fff;
+    -webkit-text-stroke: 3px #e0e1e4;
     transition: all ease-in-out 0.5s;
 }
 div.second-screen .second-screen .screen-order {
@@ -1450,14 +1488,15 @@ div.fourth-screen .fourth-screen .screen-order {
     transition: all ease-in-out 0.5s;
     opacity: 1;
 }
-.third-screen .screen__title-subtitle {
+.third-screen .screen__title-subtitle,
+.second-screen .screen__title-subtitle {
     margin-bottom: 7.5vh;
 }
 .page-content .main-wrapper .screen .screen-order {
     opacity: 0;
     transition: all ease-in-out 1s 0.5s;
 }
-.third-screen__button {
+.screen__button {
     display: inline-block;
     font-size: 1.7rem;
     font-weight: 600;
@@ -1470,7 +1509,7 @@ div.fourth-screen .fourth-screen .screen-order {
     transition: all ease-in-out 0.9s;
     transform: translateX(-100%);
 }
-.third-screen__button::before {
+.screen__button::before {
     content: "";
     display: block;
     position: absolute;
@@ -1482,9 +1521,12 @@ div.fourth-screen .fourth-screen .screen-order {
     z-index: -1;
     transform: rotate(15deg);
     opacity: 0;
-    transition: opacity ease-in-out 0.3s, left linear 0s, width linear 0.6s 0s;
+    transition:
+        opacity ease-in-out 0.3s,
+        left linear 0s,
+        width linear 0.6s 0s;
 }
-.third-screen__button::after {
+.screen__button::after {
     content: "";
     display: block;
     position: absolute;
@@ -1496,47 +1538,50 @@ div.fourth-screen .fourth-screen .screen-order {
     z-index: -1;
     transform: rotate(15deg);
     opacity: 0;
-    transition: opacity ease-in-out 0.3s, right linear 0s, width linear 0.6s 0s;
+    transition:
+        opacity ease-in-out 0.3s,
+        right linear 0s,
+        width linear 0.6s 0s;
 }
-.third-screen__button:hover::before {
-    transition: opacity ease-in-out 0.2s, left linear 0.2s,
+.screen__button:hover::before {
+    transition:
+        opacity ease-in-out 0.2s,
+        left linear 0.2s,
         width linear 0.2s 0.2s;
     opacity: 1;
     width: 70%;
     left: 45%;
     height: 200%;
 }
-.third-screen__button:hover::after {
-    transition: opacity ease-in-out 0.2s, right linear 0.2s,
+.screen__button:hover::after {
+    transition:
+        opacity ease-in-out 0.2s,
+        right linear 0.2s,
         width linear 0.2s 0.2s;
     opacity: 1;
     width: 70%;
     right: 45%;
     height: 200%;
 }
-.third-screen__button:hover {
+.screen__button:hover {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /*box-shadow: 0px 0px 17px 5px rgba(255, 255, 255, 0.2);*/
 }
-div.second-screen .second-screen .third-screen__button {
+div.screen .screen__button {
     transition: transform 0.9s ease-in-out 0.5s;
     transform: translateX(0px);
 }
-.page-content .page-content .third-screen__button {
+.page-content .page-content .screen__button {
     transition: transform 0.9s ease-in-out 0.5s;
     transform: translateX(0px);
 }
-div.third-screen .third-screen .third-screen__button {
+div.screen .screen__button {
     transition: transform 0.9s ease-in-out 0.5s;
     transform: translateX(0px);
 }
-div.third-screen .screen.animate .third-screen__button {
+.screen.animate .screen__button {
     transition: transform 0.9s ease-in-out 0.5s;
     transform: translateX(-100%);
-}
-div.fourth-screen .fourth-screen .third-screen__button {
-    transition: transform 0.9s ease-in-out 0.5s;
-    transform: translateX(0px);
 }
 
 /* page-content */
@@ -1607,21 +1652,17 @@ div.fourth-screen .fourth-screen .third-screen__button {
 
 /* text-part */
 .page-content__section {
-    padding: 8.5vw 8vw;
+    padding: 50px 8vw;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     z-index: 110;
     transition: all 0.3s ease;
     background: #34353a;
-    color: #fff;
-}
-.page-content__section:first-child {
-    padding-top: 14vw;
+    color: #e0e1e4;
 }
 .page-content__section:nth-child(2) {
-    transition: all 0.3s ease;
-    padding-bottom: 7vw;
+    padding-top: 100px;
 }
 .page-content__title {
     width: 38.65vw;
@@ -1630,21 +1671,22 @@ div.fourth-screen .fourth-screen .third-screen__button {
     display: flex;
     align-items: center;
     z-index: 110;
-    color: #fff;
+    color: #e0e1e4;
 }
 .page-content__title-count .text-red {
     color: #f94444;
 }
 .page-content__title-main {
     margin: 0px 1.041vw;
+    font-weight: 700;
 }
 .page-content__title-line {
     width: 9.895vw;
     height: 1px;
-    background: #fff;
+    background: #e0e1e4;
 }
 .page-content__section:nth-child(2) .page-content__title-line {
-    background: #fff;
+    background: #e0e1e4;
 }
 .page-content__main-text {
     width: 61.35vw;
@@ -1655,14 +1697,22 @@ div.fourth-screen .fourth-screen .third-screen__button {
     line-height: 3.5rem;
     z-index: 105;
 }
+.page-content__main-subtitle {
+    width: 61.35vw;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    line-height: 3.5rem;
+    z-index: 105;
+}
 
 /* stack */
 
 .stack {
-    padding: 0px 8vw 8.5vw 8vw;
+    padding: 0px 8vw 0 8vw;
     transition: all 0.3s ease;
     background-color: #34353a;
-    color: #fff;
+    color: #e0e1e4;
     display: grid;
     gap: 3vw;
     grid-template-columns: repeat(auto-fit, minmax(252px, 1fr));
@@ -1679,11 +1729,17 @@ div.fourth-screen .fourth-screen .third-screen__button {
     align-items: center;
     background: #3d3e42;
     flex-direction: column;
-    padding: 30px 60px;
     border-radius: 10%;
-    min-height: 9vw;
-    justify-content: space-between;
+    min-height: 220px;
+    justify-content: center;
     transition: all 0.3s ease-in-out;
+}
+.stack__item-icon {
+    max-height: 100px;
+    max-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .stack__item:hover {
     background: #f9444452;
@@ -1710,7 +1766,7 @@ div.fourth-screen .fourth-screen .third-screen__button {
 
 /* page-footer */
 footer.footer {
-    height: 30vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1802,14 +1858,14 @@ footer.footer {
 .projects-title .projects-title__item {
     transition: all 0.5s ease-in-out;
     color: transparent;
-    -webkit-text-stroke: 3px #fff;
+    -webkit-text-stroke: 3px #e0e1e4;
 }
 .projects-title .projects-title__item.filled {
-    color: #fff;
+    color: #e0e1e4;
     transition: all 0.5s ease-in-out;
 }
 .projects-title .projects-title__item:hover {
-    color: #fff;
+    color: #e0e1e4;
     transition: all 0.5s ease-in-out;
 }
 .projects-title .projects-title__item.filled:hover {
@@ -1874,7 +1930,7 @@ footer.footer {
     left: 43.5%;
     border: none;
     border-bottom: 2px solid #f94444;
-    color: #fff;
+    color: #e0e1e4;
     border-radius: 0px;
     width: 40vw;
     padding: 1.6vh 2px;
@@ -1887,28 +1943,38 @@ footer.footer {
     align-items: center;
     justify-content: space-between;
 }
-.project__botton.third-screen__button::before {
+.project__botton.screen__button::before {
     height: 550%;
     transform: rotate(22deg);
     top: -250%;
     width: 0.05vw;
-    transition: opacity ease-in-out 0.3s, left linear 0s, width linear 0.6s 0s;
+    transition:
+        opacity ease-in-out 0.3s,
+        left linear 0s,
+        width linear 0.6s 0s;
 }
-.project__botton.third-screen__button::after {
+.project__botton.screen__button::after {
     height: 550%;
     transform: rotate(22deg);
     top: -250%;
     width: 0.05vw;
-    transition: opacity ease-in-out 0.3s, right linear 0s, width linear 0.6s 0s;
+    transition:
+        opacity ease-in-out 0.3s,
+        right linear 0s,
+        width linear 0.6s 0s;
 }
-.project__botton.third-screen__button:hover::before {
-    transition: opacity ease-in-out 0.2s, left linear 0.2s,
+.project__botton.screen__button:hover::before {
+    transition:
+        opacity ease-in-out 0.2s,
+        left linear 0.2s,
         width linear 0.2s 0.2s;
     left: 50%;
     width: 70%;
 }
-.project__botton.third-screen__button:hover::after {
-    transition: opacity ease-in-out 0.2s, right linear 0.2s,
+.project__botton.screen__button:hover::after {
+    transition:
+        opacity ease-in-out 0.2s,
+        right linear 0.2s,
         width linear 0.2s 0.2s;
     right: 50%;
     width: 70%;
@@ -1949,6 +2015,7 @@ footer.footer {
     background: #f94444;
     position: absolute;
     left: -100%;
+    top: 50%;
     transition: left ease-in-out 0.5s;
 }
 .footer-link:hover:before {
@@ -2034,12 +2101,14 @@ footer.footer {
     max-height: 70px;
     max-width: 70px;
     position: sticky;
-    color: #fff;
+    color: #e0e1e4;
     text-align: center;
     z-index: 100;
     text-decoration: none;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
-    transition: bottom 0.5s ease-in-out 0.5s, width 0s ease-in-out 0.5s,
+    transition:
+        bottom 0.5s ease-in-out 0.5s,
+        width 0s ease-in-out 0.5s,
         height 0s ease-in-out 0.5s;
     bottom: 0;
     left: 0;
@@ -2051,7 +2120,12 @@ footer.footer {
     animation: ca3_fade_move_down 2s ease-in-out infinite;
 }
 .page-content .scroll-down-link {
-    bottom: 5%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 88vh;
+    bottom: initial;
+    max-height: 70px;
     opacity: 1;
     height: 70px;
     width: 70px;
@@ -2073,7 +2147,9 @@ footer.footer {
     border-color: #fafafa;
     border-radius: 2px;
     transform-origin: 100% 0;
-    transition: all 0.3s ease-in-out, opacity 0s ease-in-out;
+    transition:
+        all 0.3s ease-in-out,
+        opacity 0s ease-in-out;
     opacity: 0;
     transform: rotate(-133deg);
 }
@@ -2128,14 +2204,14 @@ footer.footer {
 }
 .tip {
     position: absolute;
-    top: -20vh;
+    top: -18vh;
     margin: auto;
     font-style: italic;
     font-weight: 400;
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
-    color: #fff;
-    max-width: 32.7rem;
+    color: #e0e1e4;
+    max-width: 330px;
     left: 0;
     right: 0;
 }
@@ -2169,10 +2245,6 @@ footer.footer {
     }
     .logo {
         font-size: 3rem;
-    }
-    .logo-circle {
-        width: 4.2rem;
-        height: 4.2rem;
     }
     .navigation__arrow svg {
         width: 5.3rem !important;
@@ -2357,7 +2429,8 @@ footer.footer {
     .screen__title-subtitle {
         font-size: 2.5rem;
     }
-    .third-screen .screen__title-subtitle {
+    .third-screen .screen__title-subtitle,
+    .second-screen .screen__title-subtitle {
         margin-bottom: 4.5vh;
     }
     .navigation__scrolldown.animate {
@@ -2368,7 +2441,7 @@ footer.footer {
         transform: translateY(0px);
         transition: transform ease-in-out 1s;
     }
-    .third-screen__button {
+    .screen__button {
         font-size: 2.2rem;
         padding: 1.1vh 1vw;
         align-self: self-start;
@@ -2461,7 +2534,7 @@ footer.footer {
 
 .st0 {
     opacity: 1e-2;
-    fill: #ffffff;
+    fill: #e0e1e4;
     enable-background: new;
 }
 
