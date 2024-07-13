@@ -111,7 +111,7 @@ const Works = () => {
               </ul>
             </div>
             <div className='single-project'>
-              <a href='#' className='projects__item-img' target='_blank'>
+              <a href='#' className='projects__item-img'>
                 <img
                   src={social}
                   alt=''
