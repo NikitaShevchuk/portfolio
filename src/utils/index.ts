@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 const scrollWindowTemporary = () => {
   let hasScrolled = false;
@@ -10,8 +10,8 @@ const scrollWindowTemporary = () => {
 
     window.scrollTo({
       left: 0,
-      top: 200,
-      behavior: "smooth",
+      top: 100,
+      behavior: 'smooth'
     });
     hasScrolled = true;
   }, 1000);
@@ -22,7 +22,7 @@ const scrollWindowTemporary = () => {
     window.scrollTo({
       left: 0,
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth'
     });
   }, 1500);
 };

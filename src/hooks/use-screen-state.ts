@@ -1,55 +1,52 @@
-import firstScreenImage from "../assets/img/firstScreen.png";
-import thirdScreenImage from "../assets/img/thirdScreen.svg";
-import fourthScreenImage from "../assets/img/fourthScreen.svg";
+import firstScreenImage from '../assets/img/firstScreen.png';
+import thirdScreenImage from '../assets/img/thirdScreen.svg';
+import fourthScreenImage from '../assets/img/fourthScreen.svg';
 
-import Contacts from "../components/main-screen/contacts";
-import React from "react";
-import { Add, IntRange } from "../utils/typing";
+import Contacts from '../components/main-screen/contacts';
+import React from 'react';
+import { Add, IntRange } from '../utils/typing';
 
 const initialScreens = [
   {
-    className: "second-screen screen" as string,
-    link: "/about",
-    title: "Nikita Shevchuk",
-    subtitle: "front-end developer",
+    className: 'second-screen screen' as string,
+    link: '/about',
+    title: 'Nikita Shevchuk',
+    subtitle: 'Software engineer',
     image: firstScreenImage,
-    order: "01",
-    showButton: true,
+    order: '01',
+    showButton: true
   },
   {
-    className: "third-screen screen" as string,
-    link: "/works",
-    title: "My projects",
-    subtitle: "list of my best works",
+    className: 'third-screen screen' as string,
+    link: '/works',
+    title: 'Experience',
+    subtitle: 'Detailed description of my experience',
     image: thirdScreenImage,
-    order: "02",
-    showButton: true,
+    order: '02',
+    showButton: true
   },
   {
-    className: "fourth-screen screen" as string,
-    link: "",
-    title: "Contacts",
+    className: 'fourth-screen screen' as string,
+    link: '',
+    title: 'Contacts',
     textToCopy: [`shevchuk.nikita.gh@gmail.com`, `+380931471176`],
     Body: Contacts,
     image: fourthScreenImage,
-    order: "03",
-    showButton: false,
-  },
+    order: '03',
+    showButton: false
+  }
 ] as const;
 
 type Screens = typeof initialScreens;
 
-export type AllowedScreenNumber = IntRange<
-  1,
-  Add<typeof initialScreens.length, 2>
->;
+export type AllowedScreenNumber = IntRange<1, Add<typeof initialScreens.length, 2>>;
 
 const initialState = {
-  currentScreen: (localStorage.getItem("currentScreen")
-    ? Number(localStorage.getItem("currentScreen"))
+  currentScreen: (localStorage.getItem('currentScreen')
+    ? Number(localStorage.getItem('currentScreen'))
     : 1) as AllowedScreenNumber,
   isScreenOpen: false,
-  screens: initialScreens,
+  screens: initialScreens
 };
 
 export type ScreenState = typeof initialState;
@@ -58,45 +55,42 @@ export const ScreenContext = React.createContext<{
   dispatch: React.Dispatch<ScreenActions>;
 }>({ state: initialState, dispatch: () => {} });
 export enum ScreenActionTypes {
-  ENTER_SCREEEN = "ENTER_SCREEN",
-  EXIT_SCREEN = "EXIT_SCREEN",
-  CHANGE_CURRENT_SCREEN = "CHANGE_CURRENT_SCREEN",
-  NEXT_SCREEN = "NEXT_SCREEN",
-  PREV_SCREEN = "PREV_SCREEN",
-  SET_IS_SCREEN_OPEN = "SET_IS_SCREEN_OPEN",
+  ENTER_SCREEEN = 'ENTER_SCREEN',
+  EXIT_SCREEN = 'EXIT_SCREEN',
+  CHANGE_CURRENT_SCREEN = 'CHANGE_CURRENT_SCREEN',
+  NEXT_SCREEN = 'NEXT_SCREEN',
+  PREV_SCREEN = 'PREV_SCREEN',
+  SET_IS_SCREEN_OPEN = 'SET_IS_SCREEN_OPEN'
 }
 
 export const screenActions = {
   enterScreen: (screenNumber: AllowedScreenNumber) => ({
     type: ScreenActionTypes.ENTER_SCREEEN,
-    payload: screenNumber,
+    payload: screenNumber
   }),
   exitScreen: (screenNumber: AllowedScreenNumber) => ({
     type: ScreenActionTypes.EXIT_SCREEN,
-    payload: screenNumber,
+    payload: screenNumber
   }),
   changeCurrentScreen: (screenNumber: AllowedScreenNumber) => ({
     type: ScreenActionTypes.CHANGE_CURRENT_SCREEN,
-    payload: screenNumber,
+    payload: screenNumber
   }),
   nextScreen: () => ({
     type: ScreenActionTypes.NEXT_SCREEN,
-    payload: undefined,
+    payload: undefined
   }),
   prevScreen: () => ({
     type: ScreenActionTypes.PREV_SCREEN,
-    payload: undefined,
+    payload: undefined
   }),
   setIsScreenOpen: (isScreenOpen: boolean) => ({
     type: ScreenActionTypes.SET_IS_SCREEN_OPEN,
-    payload: isScreenOpen,
-  }),
+    payload: isScreenOpen
+  })
 };
 
-type ScreenActions = Omit<
-  ReturnType<(typeof screenActions)[keyof typeof screenActions]>,
-  "payload"
-> & {
+type ScreenActions = Omit<ReturnType<(typeof screenActions)[keyof typeof screenActions]>, 'payload'> & {
   payload: unknown;
 };
 
@@ -106,11 +100,11 @@ function reducer(state: ScreenState, action: ScreenActions): ScreenState {
     const updatedScreens = [...state.screens];
     updatedScreens[screenIndex] = {
       ...state.screens[screenIndex],
-      className: state.screens[screenIndex].className + " animate",
+      className: state.screens[screenIndex].className + ' animate'
     };
     return {
       ...state,
-      screens: updatedScreens as unknown as Screens,
+      screens: updatedScreens as unknown as Screens
     };
   }
   if (action.type === ScreenActionTypes.EXIT_SCREEN) {
@@ -119,16 +113,16 @@ function reducer(state: ScreenState, action: ScreenActions): ScreenState {
     const prevClassName = state.screens[screenIndex].className;
     updatedScreens[screenIndex] = {
       ...state.screens[screenIndex],
-      className: prevClassName.replace(" animate", ""),
+      className: prevClassName.replace(' animate', '')
     };
 
     return {
       ...state,
-      screens: updatedScreens as unknown as Screens,
+      screens: updatedScreens as unknown as Screens
     };
   }
   if (action.type === ScreenActionTypes.CHANGE_CURRENT_SCREEN) {
-    localStorage.setItem("currentScreen", String(action.payload));
+    localStorage.setItem('currentScreen', String(action.payload));
     return { ...state, currentScreen: action.payload as AllowedScreenNumber };
   }
   if (action.type === ScreenActionTypes.NEXT_SCREEN) {
@@ -137,7 +131,7 @@ function reducer(state: ScreenState, action: ScreenActions): ScreenState {
     if (!nextScreenIndexIsValid) {
       return state;
     }
-    localStorage.setItem("currentScreen", String(nextScreen));
+    localStorage.setItem('currentScreen', String(nextScreen));
     return { ...state, currentScreen: nextScreen };
   }
   if (action.type === ScreenActionTypes.PREV_SCREEN) {
@@ -146,14 +140,14 @@ function reducer(state: ScreenState, action: ScreenActions): ScreenState {
     if (!prevScreenIndexIsValid) {
       return state;
     }
-    localStorage.setItem("currentScreen", String(prevScreen));
+    localStorage.setItem('currentScreen', String(prevScreen));
     return { ...state, currentScreen: prevScreen };
   }
   if (action.type === ScreenActionTypes.SET_IS_SCREEN_OPEN) {
     return { ...state, isScreenOpen: action.payload as boolean };
   }
 
-  console.warn("Unknown action type", action);
+  console.warn('Unknown action type', action);
 
   return state;
 }

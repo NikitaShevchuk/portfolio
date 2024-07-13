@@ -1,14 +1,8 @@
-type Enumerate<
-  N extends number,
-  Acc extends number[] = [],
-> = Acc["length"] extends N
+type Enumerate<N extends number, Acc extends number[] = []> = Acc['length'] extends N
   ? Acc[number]
-  : Enumerate<N, [...Acc, Acc["length"]]>;
+  : Enumerate<N, [...Acc, Acc['length']]>;
 
-export type IntRange<F extends number, T extends number> = Exclude<
-  Enumerate<T>,
-  Enumerate<F>
->;
+export type IntRange<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>;
 
 type Length<T extends unknown[]> = T extends { length: infer L } ? L : never;
 
@@ -18,6 +12,4 @@ type BuildTuple<L extends number, T extends unknown[] = []> = T extends {
   ? T
   : BuildTuple<L, [...T, unknown]>;
 
-export type Add<A extends number, B extends number> = Length<
-  [...BuildTuple<A>, ...BuildTuple<B>]
->;
+export type Add<A extends number, B extends number> = Length<[...BuildTuple<A>, ...BuildTuple<B>]>;

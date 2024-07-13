@@ -1,18 +1,15 @@
 // classNames for main wrapper
-const FIRST_SCREEN = "first-screen animate";
-const SECOND_SCREEN = "second-screen black";
-const THIRD_SCREEN = "third-screen black";
-const FOURTH_SCREEN = "fourth-screen black";
+const FIRST_SCREEN = 'first-screen animate';
+const SECOND_SCREEN = 'second-screen black';
+const THIRD_SCREEN = 'third-screen black';
+const FOURTH_SCREEN = 'fourth-screen black';
 
-export const changeNameByOrder = (
-  screenNumber: number,
-  isScreenOpened: boolean,
-) => {
+export const changeNameByOrder = (screenNumber: number, isScreenOpened: boolean) => {
   const changeClassName = (className: string) => {
     if (isScreenOpened) {
       return `${className} page-content`;
     } else {
-      return className.replace(" page-content", "");
+      return className.replace(' page-content', '');
     }
   };
   if (screenNumber === 1) {
