@@ -1,30 +1,31 @@
 import React, { Suspense } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
+import App from '../App';
 
 const About = React.lazy(() => import('./about/about'));
 const Works = React.lazy(() => import('./works/works'));
 
-const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route
-        path='/about'
-        element={
+export const routes = createHashRouter([
+  {
+    path: '/',
+    Component: App,
+    children: [
+      {
+        path: '/about',
+        element: (
           <Suspense fallback={'loading...'}>
             <About />
           </Suspense>
-        }
-      />
-      <Route
-        path='/works'
-        element={
+        )
+      },
+      {
+        path: '/works',
+        element: (
           <Suspense fallback={'loading...'}>
             <Works />
           </Suspense>
-        }
-      />
-    </Routes>
-  );
-};
-
-export default AppRoutes;
+        )
+      }
+    ]
+  }
+]);

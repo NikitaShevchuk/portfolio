@@ -10,9 +10,9 @@ import mainBg from './assets/img/main-bg.webp';
 import mainBgFullhd from './assets/img/main-bg-FullHd.webp';
 import Screen from './components/main-screen/screen-component';
 import { changeNameByOrder } from './helpers/helpers';
-import AppRoutes from './components/app-routes';
 import { screenActions, ScreenContext, useScreenState } from './hooks/use-screen-state';
 import { useDebouncedCallback } from 'use-debounce';
+import { Outlet } from 'react-router-dom';
 
 const App = () => {
   const [bgImage, setBgImage] = React.useState(mainBgFullhd);
@@ -83,8 +83,8 @@ const App = () => {
                 <Screen key={screen.order} {...screen} />
               ))}
             </div>
-            <AppRoutes />
 
+            <Outlet />
             <div onClick={scrollDown} className='scroll-down-link'></div>
           </div>
         </div>
