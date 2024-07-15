@@ -3,7 +3,6 @@ import { AllowedScreenNumber, screenActions, ScreenContext } from './use-screen-
 
 export function usePageTransition(screenOrder: number) {
   const { dispatch: dispatchScreenAction } = React.useContext(ScreenContext);
-  const isFirstRenderRef = React.useRef(true);
 
   const enterPage = React.useCallback(() => {
     const content = document.querySelector<HTMLDivElement>('.content');
@@ -33,10 +32,6 @@ export function usePageTransition(screenOrder: number) {
   }, [dispatchScreenAction, screenOrder]);
 
   React.useEffect(() => {
-    if (isFirstRenderRef.current) {
-      isFirstRenderRef.current = false;
-      return;
-    }
     enterPage();
     return () => {
       exitPage();
