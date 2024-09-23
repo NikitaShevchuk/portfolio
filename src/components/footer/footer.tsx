@@ -55,9 +55,7 @@ const Footer = () => {
                 href='https://www.linkedin.com/'
                 target='_blank'
                 className='footer-social-icons__item linkedin'
-                style={{
-                  backgroundImage: `url(${linkedInIcon})`
-                }}
+                style={{ backgroundImage: `url(${linkedInIcon})` }}
               ></a>
               <a href='https://www.linkedin.com/' className='text'>
                 <div className='visible'>linkedin</div>
