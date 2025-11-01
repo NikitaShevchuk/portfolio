@@ -11,7 +11,7 @@ const initialScreens = [
     className: 'second-screen screen' as string,
     link: '/about',
     title: 'Nikita Shevchuk',
-    subtitle: 'Software engineer',
+    subtitle: 'Software Engineer',
     image: firstScreenImage,
     order: '01',
     showButton: true
@@ -29,7 +29,7 @@ const initialScreens = [
     className: 'fourth-screen screen' as string,
     link: '',
     title: 'Contacts',
-    textToCopy: [`shevchuk.nikita.gh@gmail.com`, `+380931471176`],
+    textToCopy: [`shevchuk.nikita.gh@gmail.com`, `+353851683251`],
     Body: Contacts,
     image: fourthScreenImage,
     order: '03',

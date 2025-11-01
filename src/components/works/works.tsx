@@ -2,6 +2,8 @@
 // @ts-ignore
 import luxy from 'luxy.js';
 import develops from '../../assets/img/develops.png';
+import cubex from '../../assets/img/cubex.svg';
+import avenga from '../../assets/img/avenga.svg';
 import arrow from '../../assets/img/icons/arrow2.svg';
 import social from '../../assets/img/projects/social.svg';
 import Footer from '../footer/footer';
@@ -32,9 +34,9 @@ const Works = () => {
         <div className='projects'>
           <div className='projects__item __item-left first'>
             <div className='single-project'>
-              <a href='https://develops.today/' className='projects__item-img' target='_blank'>
+              <a href='http://cubex-ua.com/' className='projects__item-img' target='_blank'>
                 <img
-                  src={develops}
+                  src={cubex}
                   alt=''
                   className='luxy-el svg'
                   data-speed-y='4'
@@ -47,9 +49,9 @@ const Works = () => {
                     <span className='text'>/</span>
                     <span className='text-red'>01</span>
                   </div>
-                  <div className='page-content__title-main'>Develops Today </div>
+                  <div className='page-content__title-main'>CubeX </div>
                   <div className='page-content__title-line'></div>
-                  <div style={{ paddingLeft: '20px', paddingTop: '5px' }}>April 2023 - May 2024 (13 months)</div>
+                  <div style={{ paddingLeft: '20px', paddingTop: '5px' }}>October 2024 - November 2025 (13 months)</div>
                 </div>
               </div>
             </div>
@@ -58,27 +60,57 @@ const Works = () => {
                 <div className='title'>Achievements</div>
                 <ul style={{ opacity: 0.8 }}>
                   <li className='small-text'>
-                    Created and maintained a comprehensive marketing platform, increasing user satisfaction by 40%, by
-                    developing the UI using Next.js, directly communicating with users to gather feedback, and
-                    implementing requested functionality. Improved client onboarding success by 50% by conducting
-                    onboarding meetings, maintaining the project, fixing bugs, and developing APIs using Django and Rest
-                    Framework. Integrated OpenAI and third-party APIs, and created and maintained a Chrome extension,
-                    significantly enhancing platform capabilities.
+                    Enhanced a large internal CMS (Next.js, Nest.js, MongoDB, PostgreSQL, microservices) with CRM
+                    integrations, automation workflows, and advanced page builder improvements, reducing template
+                    creation time by 80%.
                   </li>
                   <li className='small-text'>
-                    Developed a fully functional NFT marketplace platform, by implementing UI development with
-                    Typescript and Next.js, integrating blockchain interactions, and creating functionalities for NFT
-                    collections with pipelines to process large amounts of NFTs. Enhanced marketplace usability and user
-                    satisfaction by implementing advanced filtering and sorting mechanisms leading to a 35% increase in
-                    user engagement. Developed comprehensive marketplace analytics features.
+                    Developed a full AI-driven healthcare platform (Next.js, Nest.js, PostgreSQL, AWS) with session
+                    transcription, Stripe billing, and analytics dashboards, improving clinical documentation
+                    efficiency.
                   </li>
                   <li className='small-text'>
-                    Managed a team of intern developers, assigning tasks and reviewing their code to ensure quality and
-                    consistency with project requirements.
+                    Built scalable backend infrastructure for an appointment management system, implementing AWS
+                    microservices, caching, and geolocation search to support thousands of active users.
                   </li>
                   <li className='small-text'>
-                    Conducted technical interviews, effectively recruiting and assessing the technical skills of
-                    potential candidates, thereby strengthening the development team.
+                    Led developer interviews and contributed to team growth and technical decision-making across
+                    multiple projects.
+                  </li>
+                </ul>
+              </div>
+              <a
+                href='http://cubex-ua.com/'
+                target='_blank'
+                className='third-screen__button hide-circle project__botton'
+              >
+                <span>
+                  Company Website
+                  <img src={arrow} alt='' />
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div className='projects__item __item-right second'>
+            <div className='flex flex-column justify-between'>
+              <div>
+                <div className='title'>Achievements</div>
+
+                <ul style={{ opacity: 0.8 }}>
+                  <li className='small-text'>
+                    Built and launched an AI-powered marketing platform (Next.js, Django REST) from the ground up,
+                    collaborating with early users to define and refine core features. Created and maintained a Chrome
+                    extension, significantly enhancing platform capabilities.
+                  </li>
+                  <li className='small-text'>
+                    Contributed to NFT marketplace, improved UX/UI, driving 35% user growth. Integrated blockchain
+                    interactions and created functionalities for NFT collections with pipelines to process large amounts
+                    of NFTs.
+                  </li>
+                  <li className='small-text'>
+                    Mentored interns, conducted technical interviews, and led code reviews to maintain code quality and
+                    team consistency..
                   </li>
                 </ul>
               </div>
@@ -93,27 +125,11 @@ const Works = () => {
                 </span>
               </a>
             </div>
-          </div>
 
-          <div className='projects__item __item-right second'>
-            <div>
-              <div className='title'>Achievements</div>
-
-              <ul style={{ opacity: 0.8 }}>
-                <li className='small-text'>
-                  Developed a resource for publishing and downloading articles and books in different formats
-                </li>
-                <li className='small-text'>
-                  Provided an online service to a customer for searching and managing different schools and courses for
-                  children using Wordpress.{' '}
-                </li>
-                <li className='small-text'>Deployed more than 10 sites on HTML/CSS, Javascript, and WordPress.</li>
-              </ul>
-            </div>
             <div className='single-project'>
-              <a href='#' className='projects__item-img'>
+              <a href='https://develops.today/' className='projects__item-img'>
                 <img
-                  src={social}
+                  src={develops}
                   alt=''
                   className='luxy-el'
                   data-speed-y='-5'
@@ -126,11 +142,65 @@ const Works = () => {
                     <span className='text'>/</span>
                     <span className='text-red'>02</span>
                   </div>
-                  <div className='page-content__title-main'>Freelance</div>
+                  <div className='page-content__title-main'>Develops Today</div>
                   <div className='page-content__title-line'></div>
-                  <div style={{ paddingLeft: '20px', paddingTop: '5px' }}>June 2020 - December 2021</div>
+                  <div style={{ paddingLeft: '20px', paddingTop: '5px' }}>April 2023 - May 2024 (13 months)</div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className='projects__item __item-left first'>
+            <div className='single-project'>
+              <a href='https://www.avenga.com/' className='projects__item-img' target='_blank'>
+                <img
+                  src={avenga}
+                  alt=''
+                  className='luxy-el svg'
+                  data-speed-y='4'
+                  data-offset={`-${(100 / 450) * window.innerHeight}`}
+                />
+              </a>
+              <div className='projects__item-title'>
+                <div className='page-content__title'>
+                  <div className='page-content__title-count'>
+                    <span className='text'>/</span>
+                    <span className='text-red'>03</span>
+                  </div>
+                  <div className='page-content__title-main'>Avenga </div>
+                  <div className='page-content__title-line'></div>
+                  <div style={{ paddingLeft: '20px', paddingTop: '5px' }}>May 2022 - February 2023 (10 months)</div>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-column justify-between'>
+              <div>
+                <div className='title'>Achievements</div>
+                <ul style={{ opacity: 0.8 }}>
+                  <li className='small-text'>
+                    Developed and maintained web applications using React.js, Node.js, and PostgreSQL.
+                  </li>
+                  <li className='small-text'>
+                    Implemented frontend components, backend APIs, and database integrations.
+                  </li>
+                  <li className='small-text'>
+                    Collaborated with a small team to gather client requirements and deliver functional solutions.
+                  </li>
+                  <li className='small-text'>
+                    Contributed to CI/CD pipelines, automated testing, and deployment workflows.
+                  </li>
+                </ul>
+              </div>
+              <a
+                href='https://www.avenga.com/'
+                target='_blank'
+                className='third-screen__button hide-circle project__botton'
+              >
+                <span>
+                  Company Website
+                  <img src={arrow} alt='' />
+                </span>
+              </a>
             </div>
           </div>
         </div>

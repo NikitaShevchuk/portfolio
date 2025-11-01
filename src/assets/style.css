@@ -1931,6 +1931,10 @@ div.screen .screen__button {
   margin-top: 5px;
 }
 
+.second .page-content__title-line {
+  width: 9vw;
+}
+
 .page-content__section:nth-child(2) .page-content__title-line {
   background: #e0e1e4;
 }
@@ -2230,8 +2234,12 @@ li.small-text {
   background-position: center;
 }
 
+.first .projects__item-img img {
+  width: 22vw;
+}
+
 .second .projects__item-img img {
-  max-width: 8vw;
+  max-width: 15vw;
 }
 
 .last .projects__item-img img {

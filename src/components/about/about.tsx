@@ -45,38 +45,6 @@ const About = () => {
             <span className='half-opacity'>(Optical and Mechanical College)</span> Software Engineering
           </div>
         </div>
-        <div className='page-content__section'>
-          <div className='page-content__title'>
-            <div className='page-content__title-count'>
-              <span className='text'>/</span>
-              <span className='text-red'>03</span>
-            </div>
-            <div className='page-content__title-main'>LANGUAGES</div>
-            <div className='page-content__title-line'></div>
-          </div>
-
-          <div className='page-content__main-text'>
-            English - Upper-Intermediate <span className='half-opacity'>(B2)</span>, Ukrainian - Native
-          </div>
-        </div>
-
-        <div className='page-content__section'>
-          <div className='page-content__title'>
-            <div className='page-content__title-count'>
-              <span className='text'>/</span>
-              <span className='text-red'>03</span>
-            </div>
-            <div className='page-content__title-main'>COURSES</div>
-            <div className='page-content__title-line'></div>
-          </div>
-
-          <div className='page-content__main-text'>
-            React - The Complete Guide (incl Hooks, React Router, Redux){' '}
-            <span className='half-opacity'>by Maximilian Schwarzmüller - udemy.com (58 hours)</span>
-            <div style={{ paddingTop: '10px' }} /> The Complete JavaScript Course 2022: From Zero to Expert!
-            <span className='half-opacity'> by Jonas Schmedtmann - udemy.com (69 hours)</span>
-          </div>
-        </div>
 
         <div className='page-content__section'>
           <div className='page-content__main-subtitle'>Languages & Technologies</div>
